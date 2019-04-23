@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="row">
+    #foreach ($stylist in $stylists)
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">$stylist.getName()</h5>
+            <a href="/stylists/$stylist.getId()" class="card-link btn btn-info">View Clients</a>
+            <form method="post" action="delete/stylist/$stylist.getId()" class="form-inline">
+              <button class="card-link btn btn-warning" type="submit">Delete Stylist</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    #end
+    </div>
+  </div>
+
+  <div class="col-lg-4 card">
+    <form method="post" action="/stylists">
+      <h3>Add new stylists</h3>
+      <input id="name" name="name" type="text" class="form-control" placeholder="Stylist Name">
+      <br>
+      <button type="submit" class="btn btn-md btn-success">Add Stylist</button>
+    </form>
+  </div>
+</div>
+
