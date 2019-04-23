@@ -22,18 +22,18 @@ public class App {
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
 
-//        get("/", (request, response) -> {
-//            HashMap<String, Object> model = new HashMap<String, Object>();
-//            model.put("template", "templates/index.vtl");
-//            return new ModelAndView(model, layout);
-//        }, new VelocityTemplateEngine());
-//
-//        get("/stylists", (request, response) -> {
-//            HashMap<String, Object> model = new HashMap<>();
-//            model.put("stylists", Stylist.all());
-//            model.put("template", "templates/stylists.vtl");
-//            return new ModelAndView(model, layout);
-//        }, new VelocityTemplateEngine());
+        get("/", (request, response) -> {
+            HashMap<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/index.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/stylists", (request, response) -> {
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("stylists", Stylist.all());
+            model.put("template", "templates/stylists.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 //
 //        post("/stylists", (request, response) -> {
 //            HashMap<String, Object> model = new HashMap<String, Object>();
