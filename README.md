@@ -20,6 +20,7 @@ user=# CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 user=# \q
 
 ```
+* Change username and password in the DB.java and DatabaseRule.java files according to your psql username and password.
 * Go to the project directory on the terminal and run `gradle run` 
 * Open your website on `localhost:4567` to view the website.
 * The live website can be found at [Hair Salon](https://theehairsalon.herokuapp.com/)
