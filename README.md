@@ -47,6 +47,9 @@ user=# \q
 3. CSS
 4. Postgres(psql)
 
+## Known Bugs
+* The search bar is not currently functional.
+
 ## Author and Contact Information
 Written by [Victor Kilel](https://github.com/koros99). Email: vickiekross99@gmail.com.
 
