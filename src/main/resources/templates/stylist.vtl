@@ -1,11 +1,13 @@
-<div class="container">
+<div class="container stylist-details">
   <h2>$stylist.getName()'s details</h2>
+
   <div class="row">
     <div class="col-md-8">
       #if ($stylist.getClients().size()>0)
+
         <div class="list-group">
           #foreach ($client in $stylist.getClients())
-            <div href="#" class="list-group-item list-group-item-action flex-column align-items-center">
+            <div href="#" class="list-group-item list-group-item-action flex-column align-items-center client">
               <p class="list-group-item-heading">$client.getName()</p>
               <a href="/clients/$client.getId()" class="btn-sm btn-primary">Update Client Details</a>
               <form method="post" action="/delete/client/$client.getId()" class="form-inline">
@@ -14,11 +16,14 @@
             </div>
           #end
         </div>
+
       #else
         <p>$stylist.getName() has no clients yet</p>
       #end
     </div>
-    <div class="col-md-4">
+
+    <div class="col-md-4 input">
+
       <form method="post" action="/clients">
         <h3>Add client to $stylist.getName()</h3>
         <input id="stylistId" name="stylistId" type="hidden" value="$stylist.getId()">
@@ -28,7 +33,9 @@
         </div>
         <button class="btn btn-md btn-info" type="submit">Add Client</button>
       </form>
+
       <br><br>
+
       <form action="/stylist/$stylist.getId()/update" method="post">
         <h3>Update $stylist.getName()'s information.</h3>
         <div class="form-group">
@@ -37,6 +44,8 @@
         </div>
         <button type="submit" class="btn btn-success">Update Stylist</button>
       </form>
+
     </div>
+
   </div>
 </div>
