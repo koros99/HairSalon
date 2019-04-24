@@ -22,6 +22,7 @@ user=# \q
 ```
 * Go to the project directory on the terminal and run `gradle run` 
 * Open your website on `localhost:4567` to view the website.
+* The live website can be found at [Hair Salon](https://theehairsalon.herokuapp.com/)
 
 ## BDD
 * Users are able to add stylists and assign them clients.
