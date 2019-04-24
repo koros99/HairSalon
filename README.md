@@ -29,6 +29,10 @@ user=# \q
 * Users can update a stylist's details and delete them.
 * Users can update a client's details and delete them.
 
+![](images/s1.jpeg)
+![](images/s2.jpeg)
+![](images/s3.jpeg)
+
 ## Dependencies
 1. Java
 2. Gradle
