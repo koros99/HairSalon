@@ -29,9 +29,10 @@ user=# \q
 * Users can update a stylist's details and delete them.
 * Users can update a client's details and delete them.
 
-![](images/s1.png)
-![](images/s2.png)
-![](images/s3.png)
+
+<img src="https://i.ibb.co/KLgxPXy/s1.png">
+<img src="https://i.ibb.co/HYX59Nf/s2.png">
+<img src="https://i.ibb.co/qxBFJRg/s3.png">
 
 ## Dependencies
 1. Java
